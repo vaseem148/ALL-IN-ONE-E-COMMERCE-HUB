@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All in One E-commerce Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>✨ ALL IN ONE E-COMMERCE HUB ✨</h1>
+    <div class="search-container">
+      <input type="text" placeholder="Search brands..." id="search">
+    </div>
+  </header>
+
+  <!-- Container for cards -->
+  <div class="container" id="cardContainer">
+    <div class="card"><img src="myntra2.webp" loading="lazy"><h2>MYNTRA</h2><a href="https://www.myntra.com/" target="_blank"><button>🛍 Visit Myntra</button></a></div>
+    <div class="card"><img src="Flipkartimage.jpg" loading="lazy"><h2>FLIPKART</h2><a href="https://www.flipkart.com/" target="_blank"><button>📱 Visit Flipkart</button></a></div>
+    <div class="card"><img src="meeshoimage.webp" loading="lazy"><h2>MEESHO</h2><a href="https://www.meesho.com/" target="_blank"><button>👗 Visit Meesho</button></a></div>
+    <div class="card"><img src="amazonimage.jpg" loading="lazy"><h2>AMAZON</h2><a href="https://www.amazon.in/" target="_blank"><button>📦 Visit Amazon</button></a></div>
+    <div class="card"><img src="AJIO-Online-Order-Shopping-India.webp" loading="lazy"><h2>AJIO</h2><a href="https://www.ajio.com/" target="_blank"><button>👠 Visit AJIO</button></a></div>
+    <div class="card"><img src="1_MVPp8o4YbPtondC4DIxTKw.jpg" loading="lazy"><h2>NYKAA</h2><a href="https://www.nykaa.com" target="_blank"><button>💄 Visit Nykaa</button></a></div>
+    <div class="card"><img src="download.webp" loading="lazy"><h2>BIGBASKET</h2><a href="https://www.bigbasket.com" target="_blank"><button>🍎 Visit BigBasket</button></a></div>
+    <div class="card"><img src="OIP.webp" loading="lazy"><h2>SNAPDEAL</h2><a href="https://www.snapdeal.com" target="_blank"><button>🎁 Visit Snapdeal</button></a></div>
+    <div class="card"><img src="OIP (2)t.webp" loading="lazy"><h2>TATA CLIQ</h2><a href="https://www.tatacliq.com" target="_blank"><button>🛒 Visit TataCliq</button></a></div>
+    <div class="card"><img src="OIP (2)v.webp" loading="lazy"><h2>SHOPCLUES</h2><a href="https://www.shopclues.com" target="_blank"><button>🎯 Visit ShopClues</button></a></div>
+    <div class="card"><img src="OIP (2)rr.webp" loading="lazy"><h2>RELIANCE DIGITAL</h2><a href="https://www.reliancedigital.in" target="_blank"><button>💻 Visit Reliance Digital</button></a></div>
+    <div class="card"><img src="cr-20221031pn635fc97eedc04.jpg" loading="lazy"><h2>PEPPERFRY</h2><a href="https://www.pepperfry.com" target="_blank"><button>🛋 Visit Pepperfry</button></a></div>
+    <div class="card"><img src="OIP (2)zzz.webp" loading="lazy"><h2>ZIVAME</h2><a href="https://www.zivame.com" target="_blank"><button>👚 Visit Zivame</button></a></div>
+    <div class="card"><img src="download (1).webp" loading="lazy"><h2>DECATHLON</h2><a href="https://www.decathlon.in" target="_blank"><button>🏃 Visit Decathlon</button></a></div>
+    <div class="card"><img src="Inspiring-Journey-of-FirstCry.webp" loading="lazy"><h2>FIRSTCRY</h2><a href="https://www.firstcry.com" target="_blank"><button>👶 Visit FirstCry</button></a></div>
+    <div class="card"><img src="urrrrrrrrrrrr.jpg" loading="lazy"><h2>URBAN LADDER</h2><a href="https://www.urbanladder.com" target="_blank"><button>🪑 Visit Urban Ladder</button></a></div>
+    <div class="card"><img src="make.jpg" loading="lazy"><h2>MAKE MY TRIP</h2><a href="https://www.makemytrip.com" target="_blank"><button>✈ Visit MakeMyTrip</button></a></div>
+    <div class="card"><img src="cleartrip.jpg" loading="lazy"><h2>CLEARTRIP</h2><a href="https://www.cleartrip.com" target="_blank"><button>🌏 Visit Cleartrip</button></a></div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 <span>All in One E-Commerce</span> | Designed with ❤ by Vaseem
+    <div class="social-icons">
+      <a href="#"><img src="fb.png" alt="Facebook"></a>
+      <a href="#"><img src="twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="insta.png" alt="Instagram"></a>
+    </div>
+  </footer>
+
+  <!-- JS for Search -->
+  <script>
+    const searchInput = document.getElementById('search');
+    const cards = document.querySelectorAll('.card');
+
+    searchInput.addEventListener('input', () => {
+      const filter = searchInput.value.toLowerCase();
+      cards.forEach(card => {
+        const title = card.querySelector('h2').textContent.toLowerCase();
+        if(title.includes(filter)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
